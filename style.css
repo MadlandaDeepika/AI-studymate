@@ -1,0 +1,122 @@
+
+/* =================================
+   AI STUDYMATE - DESIGN SYSTEM
+   Sage Green & Warm Ivory
+================================= */
+
+:root {
+    --background: #F7F8F3;
+    --surface: #FFFFFF;
+    --primary: #718B72;
+    --primary-dark: #526D55;
+    --soft-sage: #E7EEE4;
+    --forest: #303C32;
+    --text: #414A40;
+    --muted: #818A7E;
+    --border: #E7EAE3;
+}
+
+/* Main application */
+
+.stApp {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main content spacing */
+
+.block-container {
+    max-width: 1150px;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+/* Headings */
+
+h1, h2, h3 {
+    color: var(--forest) !important;
+    font-weight: 650 !important;
+    letter-spacing: -0.5px;
+}
+
+/* Paragraphs */
+
+p, label, li {
+    color: var(--text);
+}
+
+/* Sidebar */
+
+[data-testid="stSidebar"] {
+    background-color: #EDF1E9;
+    border-right: 1px solid var(--border);
+}
+
+/* Buttons */
+
+.stButton > button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 0.65rem 1.3rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.stButton > button:hover {
+    background-color: var(--primary-dark);
+    color: white;
+    border: none;
+}
+
+/* File uploader */
+
+[data-testid="stFileUploader"] {
+    background-color: var(--surface);
+    border: 1px dashed #A8B9A5;
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+/* Input fields */
+
+.stTextInput input,
+.stTextArea textarea {
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+/* Cards */
+
+.study-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 22px;
+    min-height: 145px;
+    box-shadow: 0 4px 16px rgba(48, 60, 50, 0.04);
+    transition: 0.2s ease;
+}
+
+.study-card:hover {
+    border-color: #A8B9A5;
+    transform: translateY(-3px);
+}
+
+/* Divider */
+
+hr {
+    border-color: var(--border);
+}
+
+/* Hide Streamlit branding */
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
